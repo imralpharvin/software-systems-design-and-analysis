@@ -1,0 +1,101 @@
+ReqID,Category,User,Requirement,Dependencies,Priority,TimeEstimate
+1,Must,system,The system must be compliant with AODA WCAG 2.0 Distinguishable Content to increase the system's usability for users with disabilities.,,10,0.5
+2,Must,system,The system must follow privacy terms as required by WDGPH.,,10,2
+3,Must,system,The system must be available on iOS 10 to iOS 12.4 to support the majority of iOS users.,,10,4
+4,Must,system,The system must be available on Android 5 to Android 10 to support the majority of Android users.,,10,4
+5,Must,system,The system must only be presented in the English language as it is the primary language of the WDGPH region.,,10,0.5
+6,Must,system,The system must have file folder permissions on the Android platform so that photos from device storage may be used within the system.,4,10,0.5
+7,Must,system,The system must have file folder permissions on the iOS platform so that photos from device storage may be used within the system.,3,10,0.5
+8,Must,system,The system must be able to prompt for text input between 1 and 280 characters so that the system can collect written questionnaire responses.,4,10,0.5
+9,Must,system,The system must have camera permissions on the Android platform so that the camera can be used within the system.,4,10,0.5
+10,Must,system,The system must have camera permissions on the iOS platform so that the camera can be used within the system.,3,10,1
+11,Must,system,The system must have location permissions on the iOS platform so that the system can automatically log the users location.,3,10,0.5
+12,Must,system,The system must have location permissions on the Android platform so that the system can automatically log the user's location.,4,10,0.5
+13,Must,system,"The system must be able to connect to a WDGPH server so that it can send data, so long that the user has internet access.",4,10,1
+14,Must,system,The system must be available on the Google Play store so that it can be installed by all relevant Android users.,4,10,1
+15,Must,system,The system must be available on the iOS App Store so that it can be installed by all relevant iOS users.,3,10,0.5
+16,Must,system,The system must prompt the user to complete a questionnaire to provide the submission with relevant data.,8,10,1
+17,Must,system,"The system must have the ability to receive a new session token from the server, used to identify the user's outbound requests.",13,10,0.5
+18,Must,system,"The system must be able to upload submissions to WDGPH, so that WDGPH can analyze it.",17,10,4
+19,Must,system,The system must assign a unique ID tag to each submission as a primary key for the database storing the information.,18,10,0.5
+20,Must,system,The system must have a location included before submitting to ensure the user was near the geofenced area.,12,10,1
+21,Must,system,"The system must only allow a user to submit if the submission has an image, location, and filled out questionnaire.",18,10,1
+22,Must,system,The system must be compatible with Google Maps API for a simple and robust mapping system.,4,10,4
+23,Must,user,The user must have the ability to drop a pin on a map to allow the user to choose the general area the tick bite occurred.,22,10,1
+24,Must,system,The system must allow the user to take a picture in the app so that it can be submitted to WDGPH.,10,10,0.5
+25,Must,system,The system must be able to store the photos taken from within the system in the system's local database to later send to WDGPH.,7,10,4
+26,Must,system,The system must be able to get photos taken from outside the system (such as device storage) to allow users to upload previously taken photos.,7,10,0.5
+27,Must,system,The system must only allow submissions for ticks found inside of WDGPH jurisdiction to keep data relevant to the WDGPH region.,20,10,1
+28,Must,system,The system must sanitize all data to stop SQL injection and protect the integrity of stored data.,21,10,0.5
+29,Must,system,The system must be free to download and use to appeal to a broader range of people.,15,10,0.5
+30,Must,user,The user must be able to view the terms of conditions to ensure privacy standards are upheld.,2,10,0.5
+31,Must,system,"The system must have an equivalent web portal to provide a platform to update the relevant educational links, reskin the system, and other administrative tasks.",,20,2.5
+32,Must,system,The system must allow the creation of the admin so WDGPH authorized individuals can access the web portal.,31,20,3
+33,Must,admin,The admin must be able to update their account information from the admin web portal so that if their account information needs to be updated they are able.,32,20,1
+34,Must,system,The system must be reskinnable to allow admins to have a simple way to change the colour scheme.,31,20,0.5
+35,Must,system,The system must be able to store information for an in-progress questionnaire so that it can be later sent to WDGPH.,16,20,1
+36,Must,system,The system must provide a section with educational material regarding ticks for general public education. ,5,20,2
+37,Must,system,The system must have a text equivalent for images so that screen readers are able to interpret all text.,5,20,0.5
+38,Must,user,The user must be able to select between the options of manually selecting the location and the current location of the device when submitting their photo.,23,20,0.5
+39,Must,admin,The admin must be able to update the information about ticks that is in the system from the admin web portal so that can update the information without requiring users to update the system.,31,20,1
+40,Must,system,The system must place a buffer area around the WDGPH area such that ticks found just outside of the region can still be identified.,22,20,1
+41,Should,user,The user should be able to complete a full session of the system in under 5 minutes to ensure the user experience is not too long or complex.,,20,0.5
+42,Should,system,The system should ensure that all required fields are filled in so that only valid submissions are accepted.,16,20,0.5
+43,Should,system,The system should provide an option to cancel an in-progress submission on their device to improve the overall user experience.,16,30,0.5
+44,Should,system,The system should offer advice on what the requirements for a good picture are to ensure picture quality is consistent.,3,30,1
+45,Should,system,The system should encrypt all data sent from the system to the central server with SSL encryption to ensure data security.,18,30,2
+46,Should,system,The system should be able to provide responses through the system so that the user can be contacted without adding an email or phone number.,4,30,1
+47,Should,system,The system should show a 2 km by 2 km area when the map is loaded to provide the user with an easier experience finding their location.,22,30,0.5
+48,Should,system,The system should start up in less than 10 seconds to allow for a better user experience.,16,30,0.5
+49,Should,user,The user should be able to view information about WDGPH for educational purposes.,36,30,1
+50,Should,system,The system should center the dynamic map on the service region when the user chooses to manually select the location so that the user doesn't need to find the service region on a larger map.,38,30,3
+51,Should,system,"The system should validate that fields (e.g. email addresses, phone number) are properly formatted to have valid contact information of the user.",16,30,1.5
+52,Should,system,"The system should follow Google's Material Design guidelines under Material Foundations, as of September 18th 2019, on Android for the sake of consistency with other systems.",4,40,0.5
+53,Should,system,The system should re-prompt the user if photo quality was not high enough so that when WDGPH are analyzing they can identify the tick.,26,40,0.5
+54,Should,system,"The system should follow Apple's Human Interface guidelines under app architecture, user interaction, system capabilities, and visual design on iOS for the sake of consistency with other systems.",3,40,1
+55,Should,system,The system should show the user the privacy policy before any submissions can be made so that the user understands what information is being gathered from them and how it is being used.,21,40,0.5
+56,Should,system,The system should show the user the terms of service before any submissions can be made for legal purposes and to provide a disclaimer.,22,40,0.5
+57,Should,admin,The admin should be able to update the privacy policy without changing the system's code so that it can be easily updated to reflect changes in the future.,31,40,0.5
+58,Should,admin,The admin should be able to update the terms of service without changing the system's code so that it can be easily updated to reflect changes in the future.,31,40,0.5
+59,Should,system,The system should be able to provide links to educational material on ticks for the user to get more information about ticks.,36,40,0.5
+60,Should,system,The system should display a message indicating when a submission has been successfully submitted to eliminate doubt and confusion for the users.,16,40,0.5
+61,Could,user,The user could have the option to modify the font size to improve accessibility.,4,40,0.5
+62,Could,system,The system could be compatible with OpenStreetMap's API to simplify coding requirements.,4,40,4
+63,Could,system,The system could have two-factor authentication in the web portal to improve data security.,31,40,3
+64,Could,user,The user could be able to upload up to 10 pictures of the same tick at a time to give WDGPH more accurate data.,26,40,1
+65,Could,system,The system could provide measurement details based on information gathered by the device's sensors to provide the admin with a scale when one is not provided in the photo.,9,40,2
+66,Could,system,The system could have a simple menu with 4 or less primary options on the home screen to simplify the user experience.,4,40,1
+67,Could,admin,The admin could be limited to choosing colours schemes that have AODA WCAG 2.0 compliant contrasts to increase system accessibility. ,34,40,1
+68,Could,system,The system could limit the map view to a maximum size of 500 by 500 kilometres to prevent the user from accidentally zooming out too far.,22,40,1
+69,Could,system,The system could have a download size smaller than 40 megabytes to ensure an efficient system that most phones can download.,15,40,0.5
+70,Could,system,The system could suggest for the user to use a coin in the photo as a size reference so that WDGPH admin has a reference point for the size of the tick.,10,40,1
+71,Could,system,"The system could check for admin responses, when an internet connection is available, within 10 seconds of when the system is started so that responses can be presented to the user in a timely manner.",13,40,0.5
+72,Could,system,The system could extract and submit coordinates from image EXIF data to make the submission process easier on the user.,16,40,0.5
+73,Could,admin,The admin could use text messages to send their responses to the users.,32,40,0.5
+74,Could,system,The system could have the ability to store pictures taken in the system to the device's photo gallery to allow users to review pictures for future use.,25,40,0.5
+75,Could,system,The system could request to provide push notifications to keep the user informed on replies.,46,40,0.5
+76,Could,system,The system could have a system support option to allow users to report issues with the system.,4,50,1
+77,Could,user,The user could have an option for a user-friendly tutorial to better familiarize the user with the software layout.,54,50,1
+78,Could,system,The system could close the system if the user becomes idle for longer than 5 minutes to conserve user battery.,4,50,0.5
+79,Could,admin,The admin could be able to trigger the service no longer active message to inform the user when the system is no longer needed.,33,50,0.5
+80,Could,user,The user could have view-only access to previously submitted submissions to prevent users from altering data while still letting them use it.,18,50,1
+81,Could,system,The system could compress submissions so that the users use less bandwidth when making a submission.,18,50,1
+82,Could,system,The system could display a message indicating the service is no longer active if the system has been shut down so there is less confusion about the status of the system.,79,50,0.5
+83,Could,system,"The system could communicate with machine learning API using REST, Apache, etc. to automate tick recognition and take the burden off WDGPH employees.",13,50,1
+84,Could,system,The system could have a submission CAPTCHA to prevent spam.,18,50,1
+85,Could,system,The system could display articles within the educational page so that the user can get information on ticks offline.,36,50,0.5
+86,Wont,user,The user won't be able to gain administrative access such that privileges are not abused.,,,
+87,Wont,admin,"The admin won't be able to access the users' personal data, except for the purpose of communication and analysis. ",,,
+88,Wont,system,The system won't distribute personal data to anyone except WDGPH to maintain privacy.,,,
+89,Wont,system,The system won't be supporting multiple languages due to location specifics not needing them.,,,
+90,Wont,user,The user won't be able to see other users submitted photos to maintain user privacy.,,,
+91,Wont,system,The system won't give definitive answers about the users ticks to maintain accuracy and avoid liability.,,,
+92,Wont,system,The system won't use colour-based cues to comply with AODA to be more accessible.,,,
+93,Wont,system,The system won't use sound-based cues to comply with AODA to be more accessible.,,,
+94,Wont,system,The system won't be giving out medical advice as it is not authorized to advise users without a high enough level of certainty.,,,
+95,Wont,user,The user won't be able to create an account on the app as creating an account would slow down the user experience.,,,
+96,Wont,system,The system won't support old versions of the system as new updates are released as we do not want multiple supported versions.,,,
+97,Wont,system,The system won't be able to upload photos to social media directly from the system to keep user privacy intact.,,,
+98,Wont,system,The system won't use third party trackers or similar features unless it is critical to functionality to protect the user's privacy.,,,
+99,Wont,user,The user won't be asked to disclose any medical information to protect the user's privacy and to reduce the liability of transmitting and storing such sensitive information.,,,
+100,Wont,system,The system won't have a chat function so that WDGPH admin do not have to spend more time than necessary responding to users.,,,
